@@ -7,7 +7,7 @@
 
 \documentclass[10pt,a4paper,roman,colorlinks,linkcolor=true]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 \AfterPreamble{\hypersetup{
-  urlcolor=blue, citecolor = blue,anchorcolor = blue
+    urlcolor=blue, citecolor = blue,anchorcolor = blue
 }}
 % modern themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -39,7 +39,7 @@
 %  \phone[mobile]{(+91) 942-649-1907}                   % optional, remove / comment the line if not wanted
 % \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not bwanted
-\renewcommand{\emaillink}[1]{#1} 
+\renewcommand{\emaillink}[1]{#1}
 \email{ativsc@gmail.com}
 \email{atjoshi@umass.edu}
 % optional, remove / comment the line if not wanted
@@ -58,44 +58,44 @@
 % bibliography with mutiple entries
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
-  
+
 \newcommand*{\customcventry}[7][.25em]{
-  \begin{tabular}{@{}l} 
+  \begin{tabular}{@{}l}
     {\bfseries #4}
   \end{tabular}
   \hfill% move it to the right
   \begin{tabular}{l@{}}
-     {\bfseries #5}
+    {\bfseries #5}
   \end{tabular} \\
-  \begin{tabular}{@{}l} 
+  \begin{tabular}{@{}l}
     {\itshape #3}
   \end{tabular}
   \hfill% move it to the right
   \begin{tabular}{l@{}}
-     {\itshape #2}
+    {\itshape #2}
   \end{tabular}
   \ifx&#7&%
   \else{\\%
     \begin{minipage}{\maincolumnwidth}%
       \small#7%
-    \end{minipage}}\fi%
-  \par\addvspace{#1}}
+  \end{minipage}}\fi%
+\par\addvspace{#1}}
 
 \newcommand*{\customcvproject}[4][.25em]{
-%   \vfill\noindent
-  \begin{tabular}{@{}l} 
+  %   \vfill\noindent
+  \begin{tabular}{@{}l}
     {\bfseries #2}
   \end{tabular}
   \hfill% move it to the right
   \begin{tabular}{l@{}}
-     {\itshape #3}
+    {\itshape #3}
   \end{tabular}
   \ifx&#4&%
   \else{\\%
     \begin{minipage}{\maincolumnwidth}%
       \small#4%
-    \end{minipage}}\fi%
-  \par\addvspace{#1}}
+  \end{minipage}}\fi%
+\par\addvspace{#1}}
 
 \setlength{\tabcolsep}{12pt}
 
@@ -110,7 +110,7 @@
 
 % \begin{center}
 % \begin{tabular}{ c c c c }
-%  \faGlobe\enspace mysite.me & \faEnvelopeO\enspace pchatter@andrew.cmu.edu & \faGithub\enspace yourgithub &  \faMobile\enspace 928-409-2740\\  
+%  \faGlobe\enspace mysite.me & \faEnvelopeO\enspace pchatter@andrew.cmu.edu & \faGithub\enspace yourgithub &  \faMobile\enspace 928-409-2740\\
 % \end{tabular}
 % \end{center}
 
@@ -124,10 +124,11 @@
 {\customcventry{Aug'15 - May'19}{BTech in Information and Communication Technology}{Ahmedabad University}{Ahmedabad, Gujarat, India}{}{CGPA: 3.64/4.33 (Link to \href{https://github.com/AtivJoshi/Docs/blob/main/transcript_BTech.pdf}{transcript})}}
 
 \section{Interests}
-Online Algorithms, Resource Allocation, Information Theory, Machine Learning, Optimization, Natural Language Processing, Graphical Models, Mathematical Modeling, Game Theory.
+Online Optimization, Resource Allocation, Information Theory, Machine Learning, Optimization, Natural Language Processing, Graphical Models, Mathematical Modeling, Game Theory.
 
-\nocite{*}
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
+\nocite{joshi2026onlinecachingtree,joshi2026reusableresource,sinha2023no,universal2022}
+% \bibliographystyle{plain}
 \bibliography{publications}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -135,98 +136,106 @@ Online Algorithms, Resource Allocation, Information Theory, Machine Learning, Op
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Technical Skills}
 \begin{itemize}
-\item \noindent \textbf{Languages \& Scripts} (C, C++, Java, Python, Shell), 
-\item \textbf{Tools \& Libraries} (PyTorch, TensorFlow, Matlab, Maple, Numba, SageMath, SciPy/NumPy, SymPy, Verilog).
+  \item \noindent \textbf{Languages \& Scripts:} C, C++, Java, Python, Shell
+  \item \textbf{Tools \& Libraries:} PyTorch, TensorFlow, Matlab, Maple, Numba, SageMath, SciPy/NumPy, SymPy, Verilog
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Ongoing Projects}
-{\customcvproject{Online Caching in Tree Networks: Algorithms, Regret, and Complexity}{}{
-\begin{itemize}
-  \item Developing online learning algorithms for caching in tree networks, which is an often used model for content distribution networks (CDN) and information-centric networks (ICN). We study the hardness of the problem, design efficient algorithms with sub-linear regret, and validate them via simulations.
-\end{itemize}  
-}
-}
+% \section{Ongoing Projects}
+% {\customcvproject{Online Caching in Tree Networks: Algorithms, Regret, and Complexity (Accepted at \href{https://sites.google.com/usc.edu/l4dc2026/}{L4DC 2026})}{}{
+% \begin{itemize}
+%   \item Developing online learning algorithms for caching in tree networks, which is an often used model for content distribution networks (CDN) and information-centric networks (ICN). We study the hardness of the problem, design efficient algorithms with sub-linear regret, and validate them via simulations.
+% \end{itemize}
+% }
+% }
 
-{\customcvproject{Prophet Inequalities for Reusable Resource Allocation with Stochastic Durations}{}{
-  \begin{itemize}
-    \item We study the problem of online allocation of a single reusable resource to stochastically arriving tasks, a scenario common in applications like cloud computing. We give a theoretically optimal algorithm for this problem and validate its performance through simulations.
-  \end{itemize}
-}
-}
+% {\customcvproject{Learning to Allocate Reusable Resources under Stochastic Rewards and Durations (Under review at SIGMETRICS)}{}{
+%   \begin{itemize}
+%     \item We study the problem of online allocation of a single reusable resource to stochastically arriving tasks, a scenario common in applications like cloud computing. We give a theoretically optimal algorithm for this problem and validate its performance through simulations.
+%   \end{itemize}
+% }
+% }
 
 \section{Research Experience}
 
 {\customcventry{Jul'21 - Jul'23}{Tata Institute of Fundamental Research \& IIT-Madras}{Research Assistant}{Mumbai, India}{}
-{\begin{itemize}
-\item Worked on Online Learning algorithms for network caching at Learning and Networks Group.
-\end{itemize}
+  {
+    \begin{itemize}
+      \item Worked on Online Learning algorithms for network caching at Learning and Networks Group.
+    \end{itemize}
 }}
 
-
 {\customcventry{Aug'20 - Jun'21}{IISc, Bangalore,}{Research Intern (MSc Thesis)}{Chennai, India}{}
-{\begin{itemize}
-\item Project 1: We survey the nature of the capacity achieving input distribution of the AWGN channel, its behavior as the amplitude constraint is relaxed, and certain bounds on its support. Lastly we made an attempt at generalizing the bounds in a discrete setting.
-\item Project 2: Read papers on the use of Message Passing Algorithms (MPAs) to bound the the number of k-matchings in bipartite graphs. The bounds are achieved asymptotically for a sequence of 2-lifts of the original graph. These graphical models can also be used to approximate the permanets and subpermanent sums of positive matrices. We also conducted basic experiments to check efficiency of MPA to approximate permanents of various ensembles of sparse matrices.
-\item Links to \href{https://github.com/AtivJoshi/IISc/tree/main/capacity-achieving-distributions}{Project 1} and \href{https://github.com/AtivJoshi/IISc/tree/main/approximating-permanent}{Project 2}
-\end{itemize}
+  {
+    \begin{itemize}
+      \item Project 1: We survey the nature of the capacity achieving input distribution of the AWGN channel, its behavior as the amplitude constraint is relaxed, and certain bounds on its support. Lastly we made an attempt at generalizing the bounds in a discrete setting.
+      \item Project 2: Read papers on the use of Message Passing Algorithms (MPAs) to bound the the number of k-matchings in bipartite graphs. The bounds are achieved asymptotically for a sequence of 2-lifts of the original graph. These graphical models can also be used to approximate the permanets and subpermanent sums of positive matrices. We also conducted basic experiments to check efficiency of MPA to approximate permanents of various ensembles of sparse matrices.
+      \item Links to \href{https://github.com/AtivJoshi/IISc/tree/main/capacity-achieving-distributions}{Project 1} and \href{https://github.com/AtivJoshi/IISc/tree/main/approximating-permanent}{Project 2}
+    \end{itemize}
 }}
 
 {\customcventry{Jan'19 - May'19}{Chennai Mathematical Institute}{Research Intern (BTech Project)}{Chennai, India}{}
-{\begin{itemize}
-  \item Worked on approximating the permanent of a matrix using Markov Random Fields. 
-  \item The primary approach is to create a Markov Random Field whose partition function is the permanent of a square matrix. Then use Belief Propagation to compute Bethe Free Energy which approximates the permanent. We then try to generalize the algorithm to compute permanent of rectangular matrices. (The internship was a part of my bachelor's thesis).
-  \item Links to \href{https://github.com/AtivJoshi/Perm-Approx}{Code} and \href{https://github.com/AtivJoshi/Perm-Approx/blob/master/Approximating_Permanent_CMI.pdf}{Report}
-\end{itemize}
+  {
+    \begin{itemize}
+      \item Worked on approximating the permanent of a matrix using Markov Random Fields.
+      \item The primary approach is to create a Markov Random Field whose partition function is the permanent of a square matrix. Then use Belief Propagation to compute Bethe Free Energy which approximates the permanent. We then try to generalize the algorithm to compute permanent of rectangular matrices. (The internship was a part of my bachelor's thesis).
+      \item Links to \href{https://github.com/AtivJoshi/Perm-Approx}{Code} and \href{https://github.com/AtivJoshi/Perm-Approx/blob/master/Approximating_Permanent_CMI.pdf}{Report}
+    \end{itemize}
 }}
 
 {\customcventry{May'18 - Jul'18}{Institute of Mathematical Sciences}{Summer Student}{Chennai, India}{}
-{\begin{itemize}
-  \item Studied and presented a parameterized algorithm to approximately count the number of k-paths in a directed graph by embedding the graph into Exterior (or Grassmann) Algebra.
-  \item Attended lectures on topics of theoretical computer science like Parameterized Complexity, Automata Theory, Games and Distributed Algorithms, Computational Geometry, Logic etc.
-  \item : Link to \href{https://github.com/AtivJoshi/IMSc/blob/master/IMSc_Certi.pdf}{Certificate}
-\end{itemize}
+  {
+    \begin{itemize}
+      \item Studied and presented a parameterized algorithm to approximately count the number of k-paths in a directed graph by embedding the graph into Exterior (or Grassmann) Algebra.
+      \item Attended lectures on topics of theoretical computer science like Parameterized Complexity, Automata Theory, Games and Distributed Algorithms, Computational Geometry, Logic etc.
+      \item : Link to \href{https://github.com/AtivJoshi/IMSc/blob/master/IMSc_Certi.pdf}{Certificate}
+    \end{itemize}
 }}
 %\vspace{0pt}
 {\customcventry{May'17 - July'18}{IIT-Gandhinagar}{Research Intern}{Gandhinagar, India}{}
-{\begin{itemize}
-  \item Studied and implemented the methods of sparse polynomial interpolation and sparse GCD computation for multivariate polynomials.
-  \item Topics studied include Zippel's work on sparse interpolation, Ben-Or/Tiwari's Deterministic interpolation algorithm, early termination approach by Kaltofen et. al., non monic case of sparse GCD by de Kleine et. al., parallel GCD algorithm by Monagan/Hu etc. Implementation is done in Python using SymPy. (Started as a summer intern and later visited IIT-Gn weekly during the third year of BTech).
-  \item Links to \href{https://github.com/AtivJoshi/Zippel/blob/master/IITGn_Certi.pdf}{Certificate}, \href{https://github.com/AtivJoshi/Zippel}{Code} and \href{https://github.com/AtivJoshi/Zippel/blob/master/Polynomial_GCD_IITGn.pdf}{Report}
-\end{itemize}
+  {
+    \begin{itemize}
+      \item Studied and implemented the methods of sparse polynomial interpolation and sparse GCD computation for multivariate polynomials.
+      \item Topics studied include Zippel's work on sparse interpolation, Ben-Or/Tiwari's Deterministic interpolation algorithm, early termination approach by Kaltofen et. al., non monic case of sparse GCD by de Kleine et. al., parallel GCD algorithm by Monagan/Hu etc. Implementation is done in Python using SymPy. (Started as a summer intern and later visited IIT-Gn weekly during the third year of BTech).
+      \item Links to \href{https://github.com/AtivJoshi/Zippel/blob/master/IITGn_Certi.pdf}{Certificate}, \href{https://github.com/AtivJoshi/Zippel}{Code} and \href{https://github.com/AtivJoshi/Zippel/blob/master/Polynomial_GCD_IITGn.pdf}{Report}
+    \end{itemize}
 }}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Teaching Experience}
 {\customcventry{Sep'25 - Dec'25}{University of Massachusetts, Amherst}{Teaching Assistant}{Amherst, MA, India}{}
-{\begin{itemize}
-\item CS 515: Algorithms, Game Theory and Fairness
-\end{itemize}
+  {
+    \begin{itemize}
+      \item CS 515: Algorithms, Game Theory and Fairness
+    \end{itemize}
 }}
 
 {\customcventry{May'25 - Jul'25}{University of Massachusetts, Amherst}{Teaching Assistant}{Amherst, MA, India}{}
-{\begin{itemize}
-\item CS 683: Artificial Intelligence
-\end{itemize}
+  {
+    \begin{itemize}
+      \item CS 683: Artificial Intelligence
+    \end{itemize}
 }}
 
 {\customcventry{Jan'25 - May'25}{University of Massachusetts, Amherst}{Teaching Assistant}{Amherst, MA, India}{}
-{\begin{itemize}
-\item CS 250: Introduction to Computation
-\end{itemize}
+  {
+    \begin{itemize}
+      \item CS 250: Introduction to Computation
+    \end{itemize}
 }}
 
 {\customcventry{Sep'24 - Dec'24}{University of Massachusetts, Amherst}{Teaching Assistant}{Amherst, MA, India}{}
-{\begin{itemize}
-\item CS 689: Machine Learning
-\end{itemize}
+  {
+    \begin{itemize}
+      \item CS 689: Machine Learning
+    \end{itemize}
 }}
 
 {\customcventry{Aug'18 - Dec'18}{Ahmedabad University}{Teaching Assistant}{Ahmedabad, India}{}
-{\begin{itemize}
-  \item CSC210-Data Structures and Algorithms course.
-\end{itemize}
+  {
+    \begin{itemize}
+      \item CSC210-Data Structures and Algorithms course.
+    \end{itemize}
 }}
 
 % {\customcvproject{Insider Threat Detection: Machine Learning Way}{Aug'18 - Oct'18}
@@ -235,7 +244,6 @@ Online Algorithms, Resource Allocation, Information Theory, Machine Learning, Op
 %   \end{itemize}
 %   }
 % }
-
 
 % {\customcvproject{Online Outlier Detection on FPGA}{Nov'16 - Aug'17}
 %   {\begin{itemize}
@@ -260,72 +268,72 @@ Online Algorithms, Resource Allocation, Information Theory, Machine Learning, Op
 
 % {\customcvproject{Controlling PC using Hand Gestures}{Jan '15 – May '15}
 % {\begin{itemize}
-%   \item Recognize basic gestures using a webcam and controlling various features of windows like volume, brightness, music, changing tabs of browser etc. OpenCV in python is used for image processing. (Project won first prize in the Ingenious Hackathon, '17). 
+%   \item Recognize basic gestures using a webcam and controlling various features of windows like volume, brightness, music, changing tabs of browser etc. OpenCV in python is used for image processing. (Project won first prize in the Ingenious Hackathon, '17).
 %   \item Link: \href{https://github.com/AtivJoshi/GestureDetection}{github.com/AtivJoshi/GestureDetection}
 % \end{itemize}
 % }}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Relevant Courses}
 \begin{multicols}{3}
-\textbf{BTech}
-\begin{itemize}
-    \item Algorithmic Game Theory 
-%    \item Optimization 
+  \textbf{BTech}
+  \begin{itemize}
+    \item Algorithmic Game Theory
+      %    \item Optimization
     \item Information and Coding Theory
-    \item Algorithms and Optimisation \& \\ for Big Data 
-%    \item Introduction to Blockchain 
-%    \item Operating Systems
+    \item Algorithms and Optimisation \& \\ for Big Data
+      %    \item Introduction to Blockchain
+      %    \item Operating Systems
     \item Computer Networks
     \item Signals and Systems
     \item Analog and Digital \& \\ Communications
     \item Wireless Communications
-    \item Digital Signal Processing     
-\end{itemize}
-\columnbreak
-%\vspace{10pt}
-\textbf{MSc}
-\begin{itemize}
+    \item Digital Signal Processing
+  \end{itemize}
+  \columnbreak
+  %\vspace{10pt}
+  \textbf{MSc}
+  \begin{itemize}
     \item Reinforcement Learning
     \item Computational Complexity
     \item Game Theory
     \item Stochastic Processes
     \item Linear Programming \& \\ Combinatorial Optimization
     \item Graph Theory
-\end{itemize}
-\columnbreak
-%\vspace{10pt}
-\textbf{PhD}
-\begin{itemize}
+  \end{itemize}
+  \columnbreak
+  %\vspace{10pt}
+  \textbf{PhD}
+  \begin{itemize}
     \item CS 689: Machine Learning
     \item CS 614: Randomized Algorithms
     \item CS 660: Advance Information Assurance
-    \item CS 685: Advanced Natural Language Processing    
+    \item CS 685: Advanced Natural Language Processing
     \item CS 646: Advanced Information Retrieval
-\end{itemize}
+  \end{itemize}
 \end{multicols}
-%Digital Signal Processing, Advanced Data Structures and Algorithms, Operating Systems, Computer Networks, Probability and Random Processes, Database Management Systems, Analog and Digital Communications, Signals and Systems, Linear Algebra, Data Structures and Algorithms, Computer Organization, Wireless Communications, Introduction to Blockchain, 
+%Digital Signal Processing, Advanced Data Structures and Algorithms, Operating Systems, Computer Networks, Probability and Random Processes, Database Management Systems, Analog and Digital Communications, Signals and Systems, Linear Algebra, Data Structures and Algorithms, Computer Organization, Wireless Communications, Introduction to Blockchain,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- \section{Achievements \& Other Activities}
- \begin{minipage}{\maincolumnwidth}%
-   \small{
-       \begin{itemize}
+\section{Achievements \& Other Activities}
+\begin{minipage}{\maincolumnwidth}%
+  \small{
+    \begin{itemize}
 
-           \item Winner of \textit{The Ingenious Hackathon - 2017}, Tech Fest at SEAS, Ahmedabad University.
-           \item Selected for \textit{ICPC Regionals - 2017}, Hindustan University.
-           \item Member of Registration Committee for the 38th IARCS Annual Conference on \textit{Foundations of Software Technology and Theoretical Computer Science (\href{https://www.fsttcs.org.in/archives/2018/}{FSTTCS}), 2018} held at Ahmedabad University.
-           \item Recipient of \textit{Cognizant Foundation Scholarship} (covers the tuition fees for MSc).
-           \item Member of \href{https://indscicov.in/about-us/app-development-team/}{App Development Team} of \textit{Indian Scientists’ Response to CoViD-19 (ISRC)} group. Helped develop an SMS-based E-Token system called \href{https://indscicov.in/for-scientists-healthcare-professionals/app-development/}{SMALL-BAG}, which helped local vendors to take their business online.
-           \item Conferences attended: \href{https://www.fsttcs.org.in/archives/2018/}{FSTTCS}, 2018; \href{https://www.icts.res.in/discussion-meeting/wact2019}{Workshop on Algebraic Complexity Theory}, 2019; \href{http://indico.ictp.it/event/9596/}{Youth in High-Dimensions}, 2021(held online); \href{https://itw2022.in/}{Information Theory Workshop}, 2022; \href{https://neurips.cc/Conferences/2023}{NeurIPS}, 2023.
-     \end{itemize}}%
- \end{minipage}%    
-      
+      \item Winner of \textit{The Ingenious Hackathon - 2017}, Tech Fest at SEAS, Ahmedabad University.
+      \item Selected for \textit{ICPC Regionals - 2017}, Hindustan University.
+      \item Member of Registration Committee for the 38th IARCS Annual Conference on \textit{Foundations of Software Technology and Theoretical Computer Science (\href{https://www.fsttcs.org.in/archives/2018/}{FSTTCS}), 2018} held at Ahmedabad University.
+      \item Recipient of \textit{Cognizant Foundation Scholarship} (covers the tuition fees for MSc).
+      \item Member of \href{https://indscicov.in/about-us/app-development-team/}{App Development Team} of \textit{Indian Scientists’ Response to CoViD-19 (ISRC)} group. Helped develop an SMS-based E-Token system called \href{https://indscicov.in/for-scientists-healthcare-professionals/app-development/}{SMALL-BAG}, which helped local vendors to take their business online.
+      \item Conferences attended: \href{https://www.fsttcs.org.in/archives/2018/}{FSTTCS}, 2018; \href{https://www.icts.res.in/discussion-meeting/wact2019}{Workshop on Algebraic Complexity Theory}, 2019; \href{http://indico.ictp.it/event/9596/}{Youth in High-Dimensions}, 2021(held online); \href{https://itw2022.in/}{Information Theory Workshop}, 2022; \href{https://neurips.cc/Conferences/2023}{NeurIPS}, 2023.
+    \end{itemize}}%
+\end{minipage}%
+
 % }
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
 %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-                        % 'publications' is the name of a BibTeX file
-    
+% 'publications' is the name of a BibTeX file
+
 % Publications from a BibTeX file using the multibib package
 %\section{Publications}
 %\nocitebook{book1,book2}
@@ -338,6 +346,5 @@ Online Algorithms, Resource Allocation, Information Theory, Machine Learning, Op
 %-----       letter       ---------------------------------------------------------
 
 \end{document}
-
 
 %% end of file `template.tex'.
